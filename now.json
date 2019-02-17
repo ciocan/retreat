@@ -1,6 +1,10 @@
 {
   "name": "creators-retreat",
   "version": 2,
-  "alias": ["preview.creatorsretreat.co.uk"],
+  "alias": [
+    "preview.creatorsretreat.co.uk",
+    "www.creatorsretreat.co.uk",
+    "creatorsretreat.co.uk"
+  ],
   "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }
