@@ -1,4 +1,6 @@
 import { Section, Title, Button, Content } from "rbx"
+import * as gtag from "../lib/gtag"
+
 export function CallToAction({}) {
   return (
     <Section>
@@ -11,6 +13,7 @@ export function CallToAction({}) {
         color="link"
         as="a"
         href="https://creatorsretreat.typeform.com/to/bNXc5A"
+        onClick={() => gtag.event({ action: "click", category: "CTA" })}
       >
         Share your thoughts...
       </Button>

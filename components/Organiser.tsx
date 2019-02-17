@@ -6,6 +6,7 @@ import {
   faGithub
 } from "@fortawesome/free-brands-svg-icons"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
+import * as gtag from "../lib/gtag"
 
 interface Props {
   name: string
@@ -68,6 +69,7 @@ const Link = ({ url, icon, name }: LinkProps) => (
     href={url}
     target="_new"
     textColor="black"
+    onClick={() => gtag.event({ action: "click", category: name, label: url })}
   >
     <Icon size="small">
       <FontAwesomeIcon icon={icon} />
