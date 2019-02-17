@@ -26,11 +26,12 @@ export const Organiser = ({
 }: Props) => {
   const links = Array.from(
     [
-      { url: instagramUrl, icon: faInstagram },
-      { url: linkedinUrl, icon: faLinkedin },
-      { url: githubUrl, icon: faGithub }
+      { url: instagramUrl, icon: faInstagram, name: "Instagram" },
+      { url: linkedinUrl, icon: faLinkedin, name: "Linkedin" },
+      { url: githubUrl, icon: faGithub, name: "Github" }
     ],
-    ({ url, icon }) => url && <Link key={url} url={url} icon={icon} />
+    ({ url, icon, name }) =>
+      url && <Link key={url} url={url} icon={icon} name={name} />
   )
 
   return (
@@ -57,10 +58,17 @@ export const Organiser = ({
 interface LinkProps {
   url: string
   icon: IconProp
+  name: string
 }
 
-const Link = ({ url, icon }: LinkProps) => (
-  <Level.Item as="a" href={url} target="_new" textColor="black">
+const Link = ({ url, icon, name }: LinkProps) => (
+  <Level.Item
+    as="a"
+    aria-label={name}
+    href={url}
+    target="_new"
+    textColor="black"
+  >
     <Icon size="small">
       <FontAwesomeIcon icon={icon} />
     </Icon>
