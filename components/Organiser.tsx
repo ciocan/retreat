@@ -60,7 +60,7 @@ interface LinkProps {
 }
 
 const Link = ({ url, icon }: LinkProps) => (
-  <Level.Item as="a" href={url} target="_new">
+  <Level.Item as="a" href={url} target="_new" textColor="black">
     <Icon size="small">
       <FontAwesomeIcon icon={icon} />
     </Icon>
