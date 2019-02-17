@@ -23,5 +23,10 @@ export const Footer = () => (
         Github
       </a>
     </Content>
+    <style jsx>{`
+      a {
+        color: black;
+      }
+    `}</style>
   </RBXFooter>
 )
