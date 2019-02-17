@@ -1,0 +1,37 @@
+import { Description } from "./../components/Description"
+import { Benefits } from "./../components/Benefits"
+import { Location } from "./../components/Location"
+import { Organisers } from "./../components/Organisers"
+import { CallToAction } from "./../components/CallToAction"
+import "rbx/index.css"
+import { Container } from "rbx"
+import Head from "../components/Head"
+import { Header } from "./../components/Header"
+import { Footer } from "../components/Footer"
+
+const IndexPage: React.FunctionComponent = () => {
+  return (
+    <Container>
+      <Head
+        title="Creators' Retreat"
+        description="create. connect. collaborate"
+        keywords="create, retreat, side project, focus work"
+      />
+      <Header />
+      <Description />
+      <Benefits />
+      <Location />
+      <Organisers />
+      <CallToAction />
+      <Footer />
+      <style global jsx>{`
+        .section {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+      `}</style>
+    </Container>
+  )
+}
+
+export default IndexPage
