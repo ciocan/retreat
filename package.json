@@ -1,5 +1,5 @@
 {
-  "name": "creators-retreat",
+  "name": "makers-retreat",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -15,10 +15,10 @@
     "@fortawesome/free-regular-svg-icons": "^5.7.2",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "next": "^8.0.1",
+    "next": "^8.0.2",
     "rbx": "^2.1.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "typescript": "3.3.3"
   },
   "devDependencies": {
