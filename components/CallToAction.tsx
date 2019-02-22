@@ -15,7 +15,7 @@ export function CallToAction({}) {
         href="https://creatorsretreat.typeform.com/to/bNXc5A"
         onClick={() => gtag.event({ action: "click", category: "CTA" })}
       >
-        Share your thoughts...
+        Join the Waiting List
       </Button>
     </Section>
   )

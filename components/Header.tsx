@@ -5,7 +5,7 @@ export function Header({}) {
     <Hero color="light">
       <Hero.Body>
         <Container>
-          <Title>Creators' Retreat</Title>
+          <Title>Makers' Retreat</Title>
           <Title as="h2" subtitle>
             create. connect. collaborate
           </Title>

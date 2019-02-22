@@ -4,7 +4,7 @@ export function Description({}) {
   return (
     <Section>
       <Title size={4}>
-        Creators’ Retreat gives you the space you need to take your side project
+        Makers’ Retreat gives you the space you need to take your side project
         from idea to reality.
       </Title>
       <Content size="medium">
@@ -19,7 +19,7 @@ export function Description({}) {
       </Content>
       <Content size="medium">
         So, if you have a seed of a business idea and need to reclaim some
-        focus, the Creators’ Retreat is for you. Or maybe you’ve created a
+        focus, the Makers’ Retreat is for you. Or maybe you’ve created a
         product, sought a patent and you’re ready – and raring – to go.
       </Content>
       <Title size={5}>

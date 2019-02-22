@@ -19,9 +19,9 @@ class IndexPage extends Component {
     return (
       <Container>
         <Head
-          title="Creators' Retreat"
+          title="Makers' Retreat"
           description="create. connect. collaborate"
-          keywords="create, retreat, side project, focus work"
+          keywords="makers, create, retreat, side project, focus work, digital tech"
         />
         <Header />
         <Description />
