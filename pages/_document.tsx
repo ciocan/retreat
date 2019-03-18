@@ -1,10 +1,36 @@
-import Document, { Head, Main, NextScript } from "next/document"
+import Document, {
+  Head,
+  Main,
+  NextScript,
+  NextDocumentContext
+} from "next/document"
+import { ServerStyleSheet } from "styled-components"
 import { GA_TRACKING_ID } from "../lib/gtag"
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: any) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+  static async getInitialProps(ctx: NextDocumentContext) {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        )
+      }
+    } finally {
+      sheet.seal()
+    }
   }
 
   render() {
@@ -12,7 +38,10 @@ class MyDocument extends Document {
       <html lang="en">
         <Head>
           <style>{`
-            body { margin: 0 };
+            body {
+              background-color: #fafafa;
+              margin: 0;
+            }
           `}</style>
           <script
             async
