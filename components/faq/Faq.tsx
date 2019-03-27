@@ -21,6 +21,7 @@ const Container = styled.li`
 const Question = styled.p`
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 10px;
 `
 
 const Id = styled.span`
