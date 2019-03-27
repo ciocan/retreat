@@ -13,7 +13,7 @@ import { Location } from "./../components/Location"
 import { Organisers } from "./../components/Organisers"
 import { CallToAction } from "./../components/CallToAction"
 import { Schedule } from "../components/Schedule"
-import { FAQ } from "../components/FAQ"
+import { FAQ } from "../components/faq"
 import { Footer } from "../components/Footer"
 
 class IndexPage extends Component {

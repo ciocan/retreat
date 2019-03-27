@@ -1,34 +1,23 @@
-import { Button } from "rbx"
-import * as gtag from "../lib/gtag"
 import { Section } from "./common/layout"
 import styled from "styled-components"
+import { CTAButton } from "./CTAButton"
 
-export function CallToAction({}) {
-  return (
-    <CTASection>
-      <Title>Register & Pay</Title>
-      <Subittle>Only 12 Spots available</Subittle>
-      <Price
-        amount="£490"
-        info="Super Early Bird"
-        date="until 24 March, 6:00pm"
-        isDisabled
-      />
-      <Price amount="£590" info="Early Bird" date="until 31 March, 6:00pm" />
-      <Price amount="£690" info="Regular Bird" isDisabled />
+export const CallToAction = () => (
+  <CTASection>
+    <Title>Register & Pay</Title>
+    <Subittle>Only 12 Spots available</Subittle>
+    <Price
+      amount="£490"
+      info="Super Early Bird"
+      date="until 24 March, 6:00pm"
+      isDisabled
+    />
+    <Price amount="£590" info="Early Bird" date="until 31 March, 6:00pm" />
+    <Price amount="£690" info="Regular Bird" isDisabled />
 
-      <Button
-        color="link"
-        as="a"
-        href="https://ti.to/makers-retreat/early-may"
-        target="_new"
-        onClick={() => gtag.event({ action: "click", category: "CTA" })}
-      >
-        Secure Your Spot
-      </Button>
-    </CTASection>
-  )
-}
+    <CTAButton />
+  </CTASection>
+)
 
 const CTASection = styled(Section)`
   display: flex;
