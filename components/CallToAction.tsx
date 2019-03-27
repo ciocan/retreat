@@ -12,13 +12,9 @@ export function CallToAction({}) {
         amount="£490"
         info="Super Early Bird"
         date="until 24 March, 6:00pm"
-      />
-      <Price
-        amount="£590"
-        info="Early Bird"
         isDisabled
-        date="until 31 March, 6:00pm"
       />
+      <Price amount="£590" info="Early Bird" date="until 31 March, 6:00pm" />
       <Price amount="£690" info="Regular Bird" isDisabled />
 
       <Button

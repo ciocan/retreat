@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import uuid from 'uuid/v4'
 import { Section } from "./common/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons"
@@ -23,9 +24,9 @@ export default () => (
         { hour: "630AM", description: "Sunrise Yoga & Meditation" },
         { hour: "8AM", description: "Breakfast" },
         { hour: "...", description: "Deep Work Session..." },
-        { hour: "1PM", description: "Lunch" },
+        { hour: "12PM", description: "Lunch" },
         { hour: "...", description: "Deep Work Session..." },
-        { hour: "6PM", description: "Diner" },
+        { hour: "5PM", description: "Diner" },
         { hour: "8PM", description: "Sunset Yoga & Meditation" }
       ]}
     />
@@ -37,9 +38,9 @@ export default () => (
         { hour: "...", description: "Deep Work Session..." },
         { hour: "12PM", description: "Lunch" },
         { hour: "...", description: "Deep Work Session..." },
+        { hour: "4PM", description: "Review / Show & Tell" },
         { hour: "5PM", description: "Diner" },
-        { hour: "6PM", description: "Review / Show & Tell" },
-        { hour: "8PM", description: "Checkout" },
+        { hour: "6+PM", description: "Checkout" },
         {
           hour: "",
           description:
@@ -74,7 +75,7 @@ const Day = ({ header, hours }: DayProps) => (
   <DayContainer>
     <DayHeader>{header}</DayHeader>
     {hours.map((h: Hour) => (
-      <HourContainer>
+      <HourContainer key={uuid()}>
         <Hour>{h.hour}</Hour>
         <Description>{h.description}</Description>
       </HourContainer>

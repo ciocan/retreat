@@ -32,7 +32,7 @@ export function Organisers({}) {
         people and discovering how she can help them get the best out of their
         day – and their work. Giving attendees the time to enjoy some
         self-care in the form of a spot of gentle yoga, animal lover Anna will
-        help you unleash those ideas!"
+        help you unleash those ideas! Each class will be different -interactive, relaxing and entertaining!"
         />
       </Container>
     </Section>
