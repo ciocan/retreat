@@ -1,6 +1,6 @@
 import { Title, Content } from "rbx"
-import Gallery from "./Gallery"
-import Map from "./Map"
+import { Gallery } from "./Gallery"
+import { Map } from "./Map"
 import { Section } from "./common/layout"
 
 export function Location({}) {

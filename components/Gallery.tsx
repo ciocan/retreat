@@ -10,6 +10,6 @@ const makeImg = (i: number) => ({
 
 const images = Array.from(Array(10).keys()).map(i => makeImg(i))
 
-export default () => (
+export const Gallery = () => (
   <ImageGallery lazyLoad showPlayButton={false} items={images} />
 )

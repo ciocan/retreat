@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import uuid from 'uuid/v4'
+import uuid from "uuid/v4"
 import { Section } from "./common/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons"
 import { media } from "../lib/media"
 
-export default () => (
+export const Schedule = () => (
   <Section>
     <TitleContainer>
       <Title>

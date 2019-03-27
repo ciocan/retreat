@@ -1,19 +1,20 @@
 import { Component } from "react"
+import Intercom from "react-intercom"
 import styled from "styled-components"
+import "rbx/index.css"
+import { Container as RContainer } from "rbx"
+import * as gtag from "../lib/gtag"
+import Head from "../components/Head"
+import { media } from "../lib/media"
+import { Header } from "./../components/Header"
 import { Description } from "./../components/Description"
 import { Benefits } from "./../components/Benefits"
 import { Location } from "./../components/Location"
 import { Organisers } from "./../components/Organisers"
 import { CallToAction } from "./../components/CallToAction"
-import "rbx/index.css"
-import { Container as RContainer } from "rbx"
-import Head from "../components/Head"
-import { Header } from "./../components/Header"
+import { Schedule } from "../components/Schedule"
+import { FAQ } from "../components/FAQ"
 import { Footer } from "../components/Footer"
-import * as gtag from "../lib/gtag"
-import { media } from "../lib/media"
-import Schedule from "../components/Schedule"
-import Intercom from "react-intercom"
 
 class IndexPage extends Component {
   componentDidMount() {
@@ -35,6 +36,7 @@ class IndexPage extends Component {
           <Organisers />
           <Schedule />
           <CallToAction />
+          <FAQ />
         </Container>
         <Footer />
         <Intercom appID="ux6ftpa5" />
