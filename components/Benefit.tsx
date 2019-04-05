@@ -5,10 +5,11 @@ interface Props {
   id: string
   text: string
   icons: Array<string>
+  bg: string
 }
 
-export const Benefit = ({ id, text, icons }: Props) => (
-  <Container id={id}>
+export const Benefit = ({ id, text, icons, bg }: Props) => (
+  <Container id={id} bg={bg}>
     <Icon>{icons[0]}</Icon>
     <Text>{text}</Text>
     <Icon end>{icons[1]}</Icon>
@@ -36,7 +37,7 @@ const Container = styled.li`
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  background: #2d3a3a;
+  background: ${({ bg }) => bg};
   width: 197px;
   padding: 15px;
   display: flex;

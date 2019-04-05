@@ -1,12 +1,15 @@
+import React from "react"
 import styled from "styled-components"
-import { Title } from "rbx"
 import { Organiser } from "./Organiser"
 import { media } from "../lib/media"
 import { Section } from "./common/layout"
+import SectionHeader from "./common/SectionHeader"
+import Yoga from "../svg/Yoga.svg"
 
 export const Organisers = () => (
   <Section>
-    <Title size={5}>Meet Your Retreat Organisers</Title>
+    <SectionHeader title="Meet Your Retreat Organisers" Icon={Yoga} />
+
     <Container>
       <Organiser
         name="Radu Ciocan"

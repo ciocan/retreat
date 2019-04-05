@@ -1,17 +1,20 @@
+import React from "react"
 import styled from "styled-components"
 import uuid from "uuid/v4"
 import { Section } from "./common/layout"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons"
 import { media } from "../lib/media"
+import SectionHeader from "./common/SectionHeader"
+import Calendar from "../svg/Calendar.svg"
 
 export const Schedule = () => (
   <Section>
+    <SectionHeader
+      title="9 - 13 May"
+      subtitle="Creeksea Place Barns, Essex"
+      Icon={Calendar}
+    />
+
     <TitleContainer>
-      <Title>
-        <FontAwesomeIcon icon={faCalendarAlt} /> 9 - 13 May
-      </Title>
-      <Subittle>Creeksea Place Barns, Essex</Subittle>
       <Title>Event Schedule</Title>
     </TitleContainer>
     <Day
@@ -58,9 +61,6 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   font-size: 20px;
   font-weight: bold;
-`
-const Subittle = styled.h2`
-  margin-bottom: 30px;
 `
 
 interface Hour {

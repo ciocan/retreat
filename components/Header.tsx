@@ -2,14 +2,14 @@ import React from "react"
 import { Hero, Title as RTitle, Container } from "rbx"
 import styled from "styled-components"
 import { media } from "../lib/media"
-import Rocket from "../svg/Rocket.svg"
+import Rainbow from "../svg/Rainbow.svg"
 
 export function Header() {
   return (
-    <Hero color="dark" size="fullheight">
+    <Hero color="white" size="fullheight">
       <Hero.Body>
         <Container textAlign="centered">
-          <RocketIcon />
+          <RainbowIcon />
           <Title>Makers' Retreat</Title>
           <Subtitle>create. connect. collaborate</Subtitle>
         </Container>
@@ -19,31 +19,27 @@ export function Header() {
 }
 
 const Title = styled(RTitle)`
-  font-size: 96px;
+  font-size: 42px;
   font-weight: bold;
-  text-shadow: 4px 4px 0px rgba(252, 0, 0, 0.4);
-  font-weight: bold;
-  line-height: 104px;
+  margin-top: -60px;
 
-  ${media.md`font-size: 40px; line-height: 44px;`}
+  ${media.md`font-size: 40px; line-height: 44px; margin-top: -30px;`}
   ${media.sm`font-size: 30px; line-height: 40px;`}
 `
 
 const Subtitle = styled(RTitle)`
-  text-shadow: 0px 3px 0px rgba(204, 0, 255, 0.25);
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 30px;
-  font-size: 28px;
+  line-height: 20px;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 
   ${media.md`font-size: 18px; line-height: 20px;`}
   ${media.sm`font-size: 12px; line-height: 14px;`}
 `
 
-const RocketIcon = styled(Rocket)`
-  max-width: 360px;
-  width: 50%;
-  height: 50%;
+const RainbowIcon = styled(Rainbow)`
+  max-width: 420px;
+  width: 75%;
+  height: 75%;
 `

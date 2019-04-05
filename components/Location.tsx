@@ -1,12 +1,15 @@
-import { Title, Content } from "rbx"
+import React from "react"
+import { Content } from "rbx"
 import { Gallery } from "./Gallery"
 import { Map } from "./Map"
 import { Section } from "./common/layout"
+import House from "../svg/House.svg"
+import SectionHeader from "./common/SectionHeader"
 
 export function Location({}) {
   return (
     <Section>
-      <Title size={5}>Where You’ll be Staying</Title>
+      <SectionHeader title="Where You’ll be Staying" Icon={House} />
       <Content size="medium">
         A retreat wouldn’t be a retreat without a calm, peaceful and picturesque
         location. It’s the reason we’re working hard behind the scenes to find

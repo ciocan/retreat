@@ -1,18 +1,24 @@
+import React from "react"
 import { Section } from "./common/layout"
 import styled from "styled-components"
 import { CTAButton } from "./CTAButton"
+import SectionHeader from "./common/SectionHeader"
+import Clipboard from "../svg/Clipboard.svg"
 
 export const CallToAction = () => (
   <CTASection>
-    <Title>Register & Pay</Title>
-    <Subittle>Only 12 Spots available</Subittle>
+    <SectionHeader
+      title="Register & Pay"
+      subtitle="Only 12 Spots available"
+      Icon={Clipboard}
+    />
     <Price
       amount="£490"
       info="Super Early Bird"
-      date="until 24 March, 6:00pm"
+      date="until 31 March, 6:00pm"
       isDisabled
     />
-    <Price amount="£590" info="Early Bird" date="until 31 March, 6:00pm" />
+    <Price amount="£590" info="Early Bird" date="until 14 April, 6:00pm" />
     <Price amount="£690" info="Regular Bird" isDisabled />
 
     <CTAButton />
@@ -25,15 +31,6 @@ const CTASection = styled(Section)`
   align-items: center;
 `
 
-const Title = styled.h1`
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-`
-const Subittle = styled.h2`
-  margin-bottom: 30px;
-  text-align: center;
-`
 interface PriceProps {
   amount: string
   info: string

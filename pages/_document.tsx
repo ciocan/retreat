@@ -39,7 +39,7 @@ class MyDocument extends Document {
         <Head>
           <style>{`
             body {
-              background-color: #fafafa;
+              background-color: #fff;
               margin: 0;
             }
           `}</style>

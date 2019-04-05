@@ -1,15 +1,17 @@
-import { Title, Content } from "rbx"
+import { Title as RTitle, Content } from "rbx"
 import { Section } from "./common/layout"
+import styled from "styled-components"
 
 export function Description({}) {
   return (
     <Section>
-      <Title size={3}>
+      <Headline size={1}>
         Makers’ Retreat gives you the space you need to take your side project
         from idea to reality.
-      </Title>
+      </Headline>
+
       <Content size="medium">
-        <Title size={4}>Calling all creatives!</Title>
+        <RTitle size={4}>Calling all creatives!</RTitle>
       </Content>
       <Content size="medium">
         Whether you’re a software developer, a UI or UX designer, a product
@@ -25,11 +27,13 @@ export function Description({}) {
         focus, the Makers’ Retreat is for you. Or maybe you’ve created a
         product, sought a patent and you’re ready – and raring – to go.
       </Content>
-      <Content size="medium">
-        <Title size={4}>
-          We’re Here to Help You – and Your Side Hustle - Thrive
-        </Title>
-      </Content>
     </Section>
   )
 }
+
+const Headline = styled(RTitle)`
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 20px;
+`
