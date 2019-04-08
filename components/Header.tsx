@@ -3,6 +3,7 @@ import { Hero, Title as RTitle, Container } from "rbx"
 import styled from "styled-components"
 import { media } from "../lib/media"
 import Rainbow from "../svg/Rainbow.svg"
+import Arrow from "./Arrow"
 
 export function Header() {
   return (
@@ -12,6 +13,7 @@ export function Header() {
           <RainbowIcon />
           <Title>Makers' Retreat</Title>
           <Subtitle>create. connect. collaborate</Subtitle>
+          <Arrow />
         </Container>
       </Hero.Body>
     </Hero>
