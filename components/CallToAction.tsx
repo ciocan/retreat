@@ -18,8 +18,13 @@ export const CallToAction = () => (
       date="until 31 March, 6:00pm"
       isDisabled
     />
-    <Price amount="£590" info="Early Bird" date="until 14 April, 6:00pm" />
-    <Price amount="£690" info="Regular Bird" isDisabled />
+    <Price
+      amount="£590"
+      info="Early Bird"
+      date="until 14 April, 6:00pm"
+      isDisabled
+    />
+    <Price amount="£690" info="Regular Bird" />
 
     <CTAButton />
   </CTASection>

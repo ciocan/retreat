@@ -12,19 +12,24 @@ export function Location({}) {
       <SectionHeader title="Where You’ll be Staying" Icon={House} />
       <Content size="medium">
         A retreat wouldn’t be a retreat without a calm, peaceful and picturesque
-        location. It’s the reason we’re working hard behind the scenes to find
-        the ideal spot to host you. Of course, it’ll have Wi-Fi/4G Internet –
-        but it’ll also be somewhere that will allow for maximum creativity.
+        location. It’s the reason why we’ve found the ideal spot to host you,
+        right on the coast of Essex.
       </Content>
       <Content size="medium">
-        The setting for the retreat will be a luxury barn on a farm set in
-        picturesque countryside off the Essex coast. With top notch living
-        quarters and a state of the art gym and spa on site, you’ll find
-        everything you need to switch off from the outside world and get
-        creative.
+        You’ll find yourself in a luxury barn on a farm set in the picturesque
+        countryside off the Essex coast. With beautifully designed living
+        quarters and a spa on site, and plenty of nature outside, you’ll find
+        everything you need to switch off from the outside world - so you can be
+        creative and in flow with the melody you want to embody.
       </Content>
       <Content size="medium">
-        Come along and enjoy three, full and uninterrupted days of focused work
+        But more than that, you’ll be surrounded by unique yet similar
+        individuals to you who are looking to do the same - opening the door to
+        maximum creativity and relaxation.
+      </Content>
+      <Content size="medium">
+        Come along and enjoy three, full and uninterrupted days of focused,
+        meaningful work, with Wi-FI, and a community of people on a similar ride
         at one of six, beautiful{" "}
         <a
           rel="noopener"
