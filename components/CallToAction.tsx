@@ -1,7 +1,6 @@
 import React from "react"
 import { Section } from "./common/layout"
 import styled from "styled-components"
-import { CTAButton } from "./CTAButton"
 import SectionHeader from "./common/SectionHeader"
 import Clipboard from "../svg/Clipboard.svg"
 
@@ -9,24 +8,10 @@ export const CallToAction = () => (
   <CTASection>
     <SectionHeader
       title="Register & Pay"
-      subtitle="Only 12 Spots available"
+      subtitle="For this first edition there will be a pay what you want model"
       Icon={Clipboard}
     />
-    <Price
-      amount="£490"
-      info="Super Early Bird"
-      date="until 31 March, 6:00pm"
-      isDisabled
-    />
-    <Price
-      amount="£590"
-      info="Early Bird"
-      date="until 14 April, 6:00pm"
-      isDisabled
-    />
-    <Price amount="£690" info="Regular Bird" />
-
-    <CTAButton />
+    <tito-widget event="makers-retreat/early-may" releases="zibqedcssee" />
   </CTASection>
 )
 

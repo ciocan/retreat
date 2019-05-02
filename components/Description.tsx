@@ -13,19 +13,6 @@ export function Description({}) {
       <Content size="medium">
         <RTitle size={4}>Calling all creatives!</RTitle>
       </Content>
-      <Content size="medium">
-        Phones buzzing. Emails pinging. Calls incoming...distractions are
-        everywhere – and they do nothing for your motivation. In the comforts of
-        your regular environment, inspiration can come all too rarely. The spark
-        that ignited the flames of your creativity once, can seem to draw away
-        into the edges.
-      </Content>
-
-      <Content size="medium">
-        Sometimes you get a hold of it, other times it gets a hold of you, but
-        sometimes, it can seem ever so fleeting.
-      </Content>
-      <Content size="medium">But it doesn’t have to stay that way.</Content>
 
       <Content size="medium">
         Whether you’re a software developer, a designer, a product creator,an
@@ -60,6 +47,59 @@ export function Description({}) {
         simply want to ignite the spark to a big project, and need to reclaim
         some focus and stillness, the Makers’ Retreat is for you.
       </Content>
+
+      <Content size="medium">
+        The best ideas tend to find me when I’m spending time away from the
+        office – and so it was that, while holidaying in Fuerteventura, the
+        creative juices started to flow.
+      </Content>
+      <Content size="medium">
+        It was just after New Year’s Eve and I was standing on a hammock looking
+        out to sea. It was on that very spot that I decided I wanted to create a{" "}
+        <Link
+          href="https://cryptoroulette.info/"
+          target="_new"
+          onClick={() =>
+            gtag.event({ action: "click", category: "CryptoRoulette" })
+          }
+        >
+          web app
+        </Link>
+        . After all, the conditions weren’t great for surfing, so it seemed as
+        good a time as any to work on it.
+      </Content>
+      <Content size="medium">
+        Within a couple of months, someone posted a story on the{" "}
+        <Link
+          href="https://www.indiehackers.com/interview/92356ba891"
+          target="_new"
+          onClick={() =>
+            gtag.event({ action: "click", category: "IndieHackers" })
+          }
+        >
+          Indiehackers site
+        </Link>
+        , about how a germ of an idea turned into a{" "}
+        <Link
+          href="https://www.cblocks.io/"
+          target="_new"
+          onClick={() => gtag.event({ action: "click", category: "CBlocks" })}
+        >
+          business
+        </Link>
+        . This gave me hope that even a small idea posted online, without
+        intention to generate money, can inspire someone to create a business.
+      </Content>
+      <Content size="medium">
+        My path had been similar, with my app making way for Makers’ Retreat.
+        About a year ago I joined a Vipassana silent meditation 10-day course.
+        During the last days of meditation, I got inspiration to set up a
+        retreat for tech people, which is designed for productivity, deep work
+        and making good habits. For me, the long-term vision is to make the
+        event work with a permanent base made from recycled shipping containers.
+        The plan is to host 150 people and ensure I create the right environment
+        to help others nurture their own business ideas.
+      </Content>
     </Section>
   )
 }
@@ -69,4 +109,7 @@ const Headline = styled(RTitle)`
   font-weight: bold;
   line-height: 30px;
   margin-bottom: 20px;
+`
+const Link = styled.a`
+  color: blue;
 `

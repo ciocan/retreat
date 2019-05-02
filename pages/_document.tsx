@@ -57,6 +57,12 @@ class MyDocument extends Document {
           `
             }}
           />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://css.tito.io/v1.1"
+          />
+          <script src="https://js.tito.io/v1" async />
         </Head>
         <body className="custom_class">
           <Main />
